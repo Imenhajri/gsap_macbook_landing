@@ -89,7 +89,7 @@ body {
 
 @layer components {
   header {
-    @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black min-h-[7vh];
+    @apply w-full max-w-[90%] mx-auto fixed top-0 left-1/2 -translate-x-1/2 z-50 flex-center bg-black min-h-[7vh] rounded-b-lg;
 
     nav {
       @apply container mx-auto flex-between px-5 2xl:px-0;
@@ -116,10 +116,10 @@ body {
     @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-20 2xl:mt-[7vh];
 
     div {
-      @apply relative z-10 col-center lg:translate-y-16;
+      @apply relative z-10 col-center lg:translate-y-16 mt-8 lg:mt-12;
 
       h1 {
-        @apply font-semibold lg:text-3xl 2xl:text-5xl text-white;
+        @apply font-semibold lg:text-3xl 2xl:text-5xl text-white mt-8 lg:mt-12;
       }
 
       img {
